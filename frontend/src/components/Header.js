@@ -59,17 +59,6 @@ const drawer = (
         <MenuIcon />
       </IconButton>
     </Typography>
-    <Menu
-      anchorEl={anchorEl}
-      open={Boolean(anchorEl)}
-      onClose={handleMenuClose}
-      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-    >
-      <MenuItem onClick={handleMenuClose}>Option 1</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Option 2</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Option 3</MenuItem>
-    </Menu>
     <Divider />
     <List>
       {navItems.map((item) => (
@@ -135,7 +124,6 @@ return (
     </nav>
     <Box component="main" sx={{ p: 3, marginTop: '20px' }}>
       <Toolbar />
-      {/* Your main content goes here */}
     </Box>
   </Box>
 );
