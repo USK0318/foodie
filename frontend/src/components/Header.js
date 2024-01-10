@@ -21,6 +21,7 @@ import { Link } from 'react-router-dom';
 
 const drawerWidth = 240;
 const navItems = [
+  { label: 'Home', path: '/' },
   { label: 'Search', path: '/search' },
   { label: 'Cart', path: '/cart' },
   { label: 'Offers', path: '/offers' },
