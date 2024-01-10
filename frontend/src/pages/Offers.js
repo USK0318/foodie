@@ -2,7 +2,7 @@ import React from 'react'
 
 function Offers() {
   return (
-    <div>
+    <div style={{ marginTop: '75px', marginLeft: '55px' }}>
       <h1>offers</h1>
     </div>
   )

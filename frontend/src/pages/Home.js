@@ -2,7 +2,6 @@ import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
-import { red } from '@mui/material/colors';
 import sc1 from '../media/sc1.png';
 import sc2 from '../media/sc2.png';
 import sc3 from '../media/sc3.png';
@@ -56,7 +55,6 @@ const MyCard = () => {
           </CardItem>
         </CardContainer>
       </div>
-     
     </div>
     <Footer/>
     </>
@@ -66,7 +64,7 @@ const MyCard = () => {
 const CardContainer = styled('div')({
   maxWidth: '600px',
   margin: '10px',
-  borderRadius: '15px',
+  borderRadius: '15px', // Add border radius to the outer card container
 });
 
 const CardItem = styled(Card)({

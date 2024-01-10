@@ -2,7 +2,6 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
-import {Footer} from './components/Footer';
 import Cart from './pages/Cart';
 import Offers from './pages/Offers';
 import Help from './pages/Help';
