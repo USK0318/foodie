@@ -10,29 +10,28 @@ function Cart() {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        height: '100vh',
+        height: '85vh',
+        padding: '20px', // Add padding for better spacing
       }}
     >
-      <img src={cart} alt="Shopping Cart" />
-      <p style={{ fontSize: '1.5rem' }}><b>Your cart is empty</b></p>
-      <p>You can go to the home page to view more restaurants</p>
+      <img src={cart} alt="Shopping Cart" style={{ maxWidth: '100%', height: 'auto' }} />
+      <p style={{ fontSize: '1.5rem', textAlign: 'center' }}><b>Your cart is empty</b></p>
+      <p style={{ textAlign: 'center' }}>You can go to the home page to view more restaurants</p>
       <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>
-      <button
-        style={{
-          marginTop:'10px',
-          backgroundColor: 'orange',
-          color: 'white',
-          padding: '10px 20px',
-          fontSize: '1rem',
-          borderRadius: '5px',
-          border: 'none',
-          cursor: 'pointer',
-        }}
-      >
-      
+        <button
+          style={{
+            marginTop: '10px',
+            backgroundColor: 'orange',
+            color: 'white',
+            padding: '10px 20px',
+            fontSize: '1rem',
+            borderRadius: '5px',
+            border: 'none',
+            cursor: 'pointer',
+          }}
+        >
           See Restaurants Near You
-        
-      </button>
+        </button>
       </Link>
     </div>
   );

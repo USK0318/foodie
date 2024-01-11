@@ -1,9 +1,12 @@
 import React from 'react'
+import Idley from '../assets/Idley'
 
 function Offers() {
   return (
-    <div style={{ marginTop: '75px', marginLeft: '55px' }}>
-      <h1>offers</h1>
+    <div className="home-container">
+      <p className="title">Best offers for you</p>
+      <Idley />
+      
     </div>
   )
 }

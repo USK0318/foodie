@@ -11,7 +11,8 @@ import Home from './pages/Home';
 function App() {
   return (
     <>
-      <div style={{ marginBottom: "-4%" }}><Header /></div>
+      <div ><Header /></div>
+      <div class ='final'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
@@ -19,6 +20,7 @@ function App() {
         <Route path="/help" element={<Help />} />
         <Route path="/search" element={<Search />} />
       </Routes>
+      </div>
     </>
   );
 }

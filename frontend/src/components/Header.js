@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -98,7 +98,7 @@ function Header(props) {
                 component={Link}
                 to={item.path}
                 startIcon={item.icon}
-                sx={{ color: '#3D4152', margin: '30px' }}
+                sx={{ color: '#3D4152', margin: '10px' }}
               >
                 {item.label.toLowerCase()}
               </Button>
