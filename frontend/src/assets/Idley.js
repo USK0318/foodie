@@ -68,7 +68,7 @@ const ImageContainer = styled('div')({
 
 const CardItem = styled(Card)({
   flex: '0 0 auto', // Do not allow items to grow, do not shrink, and set their initial size based on content
-  width: '100%',
+  width: '70%',
   height: '100%',
   borderRadius: '25px',
   margin: '0 8px', // Add margin to each card

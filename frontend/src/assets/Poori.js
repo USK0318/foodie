@@ -21,7 +21,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Card from '@mui/material/Card';
 
 function FoodMenu() {
-  const menuItems = [
+const menuItems = [
     paratha, poha, pongal, poori, Salad, sandwich, Shakes, vada,
     Bath, Bonda, Cakes, idli, Chole, Dosa, juice, Khichdi, ome
   ];
@@ -31,14 +31,14 @@ function FoodMenu() {
       <ImageContainer>
         {menuItems.map((item, index) => (
           <CardItem key={index}>
-            <CardMedia
-              component="img"
-              src={item}
-              alt="Best offers"
-              sx={{ width: '100%', height: '100%', borderRadius: '10px' }}
-            />
-          </CardItem>
-        ))}
+          <CardMedia
+            component="img"
+            src={item}
+            alt="Best offers"
+            sx={{ width: '100%', height: '100%', borderRadius: '10px' }}
+          />
+        </CardItem>
+))}
       </ImageContainer>
     </Scroller>
   );
@@ -58,7 +58,7 @@ const Scroller = styled('div')({
 const ImageContainer = styled('div')({
   display: 'flex',
   justifyContent: 'space-between',
-  maxWidth: '12%', // Adjust the max width for better styling
+  maxWidth: '14%', // Adjust the max width for better styling
   margin: '10px auto', // Center the container and add margin
   borderRadius: '15px',
   marginLeft: '-10px', // Add negative margin to the left side
@@ -66,9 +66,9 @@ const ImageContainer = styled('div')({
 
 const CardItem = styled(Card)({
   flex: '0 0 auto',
-  width: '100%',
+  width: '70%',
   height: '100%',
-  borderRadius: '25px',
+  borderRadius: '5px',
   margin: '0 8px',
 });
 
