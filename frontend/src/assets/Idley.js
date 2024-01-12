@@ -16,7 +16,7 @@ function Idley() {
             component="img"
             src={sc1}
             alt="Best offers"
-            sx={{ width: '100%', height: '100%', borderRadius: '10px' }}
+            sx={{ width: '100%', height: '100%', borderRadius: '10%' }}
           />
         </CardItem>
         <CardItem>
@@ -24,7 +24,7 @@ function Idley() {
             component="img"
             src={sc2}
             alt="Best offers"
-            sx={{ width: '100%', height: '100%', borderRadius: '10px' }}
+            sx={{ width: '100%', height: '100%', borderRadius: '10%' }}
           />
         </CardItem>
         <CardItem>
@@ -32,7 +32,7 @@ function Idley() {
             component="img"
             src={sc3}
             alt="Best offers"
-            sx={{ width: '100%', height: '100%', borderRadius: '10px' }}
+            sx={{ width: '100%', height: '100%', borderRadius: '10%' }}
           />
         </CardItem>
         <CardItem>
@@ -40,7 +40,7 @@ function Idley() {
             component="img"
             src={sc4}
             alt="Best offers"
-            sx={{ width: '100%', height: '100%', borderRadius: '10px' }}
+            sx={{ width: '100%', height: '100%', borderRadius: '10%' }}
           />
         </CardItem>
       </ImageContainer>
