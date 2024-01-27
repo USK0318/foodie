@@ -3,7 +3,7 @@ import sc1 from '../media/sc1.png';
 import sc2 from '../media/sc2.png';
 import sc3 from '../media/sc3.png';
 import sc4 from '../media/sc4.png';
-import { styled } from '@mui/material/styles';
+import { styled } from '@mui/system';
 import CardMedia from '@mui/material/CardMedia';
 import Card from '@mui/material/Card';
 
@@ -50,28 +50,37 @@ function Idley() {
 
 const Scroller = styled('div')({
   overflowX: 'auto',
-  whiteSpace: 'nowrap', // Prevent wrapping of items to the next line
+  whiteSpace: 'nowrap',
   '&::-webkit-scrollbar': {
-    display: 'none', // Hide the scrollbar for webkit browsers
+    display: 'none',
   },
-  msOverflowStyle: 'none', // Hide scrollbar for Internet Explorer and Edge
-  scrollbarWidth: 'none', // Hide scrollbar for Firefox
+  msOverflowStyle: 'none',
+  scrollbarWidth: 'none',
 });
 
 const ImageContainer = styled('div')({
-  display: 'flex', // Use flexbox to arrange items in a row
-  justifyContent: 'space-between', // Add space between the items
+  display: 'flex',
+  justifyContent: 'space-between',
   maxWidth: '500px',
   margin: '10px',
-  borderRadius: '15px', // Add border radius to the outer card container
+  borderRadius: '15px',
+  '@media (max-width: 600px)': {
+    alignItems: 'center',
+    maxWidth: '100%',
+    margin: '5px',
+  },
 });
 
 const CardItem = styled(Card)({
-  flex: '0 0 auto', // Do not allow items to grow, do not shrink, and set their initial size based on content
+  flex: '0 0 auto',
   width: '70%',
   height: '100%',
   borderRadius: '25px',
-  margin: '0 8px', // Add margin to each card
+  margin: '0 8px',
+  '@media (max-width: 600px)': {
+    width: '90%',
+    margin: '6px 3', // Adjust the margin to increase the gap
+  },
 });
 
 export default Idley;

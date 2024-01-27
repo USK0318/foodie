@@ -16,12 +16,12 @@ import Salad from '../media/Salad.avif';
 import sandwich from '../media/Sandwich.avif';
 import Shakes from '../media/Shakes.avif';
 import vada from '../media/Vada.avif';
-import { styled } from '@mui/material/styles';
+import { styled } from '@mui/system';
 import CardMedia from '@mui/material/CardMedia';
 import Card from '@mui/material/Card';
 
 function FoodMenu() {
-const menuItems = [
+  const menuItems = [
     paratha, poha, pongal, poori, Salad, sandwich, Shakes, vada,
     Bath, Bonda, Cakes, idli, Chole, Dosa, juice, Khichdi, ome
   ];
@@ -31,14 +31,14 @@ const menuItems = [
       <ImageContainer>
         {menuItems.map((item, index) => (
           <CardItem key={index}>
-          <CardMedia
-            component="img"
-            src={item}
-            alt="Best offers"
-            sx={{ width: '100%', height: '100%', borderRadius: '10px' }}
-          />
-        </CardItem>
-))}
+            <CardMedia
+              component="img"
+              src={item}
+              alt="Best offers"
+              sx={{ width: '100%', height: '100%', borderRadius: '10px' }}
+            />
+          </CardItem>
+        ))}
       </ImageContainer>
     </Scroller>
   );
@@ -62,6 +62,12 @@ const ImageContainer = styled('div')({
   margin: '10px auto', // Center the container and add margin
   borderRadius: '15px',
   marginLeft: '-10px', // Add negative margin to the left side
+  '@media (max-width: 600px)': {
+    margin: '1px 1px', // Adjust the margin to increase the gap
+    display: 'flex',
+    justifyContent: 'space-between',
+    maxWidth: '53%',
+  },
 });
 
 const CardItem = styled(Card)({
