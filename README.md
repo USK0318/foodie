@@ -23,7 +23,7 @@ provide a seamless and enjoyable experience for food enthusiasts.
 
 - Node.js and npm installed
 - Python and pip installed
-- [Additional prerequisites]
+- MYSQL Database
 
 ### Installation
 
