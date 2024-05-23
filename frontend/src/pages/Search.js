@@ -4,6 +4,7 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import FoodMenu from '../assets/Poori';
 import '../styles/Home.css'
+import Main from '../assets/Main';
 
 
 const SearchBar = () => {
@@ -33,11 +34,15 @@ const SearchBar = () => {
       }}
     />
   </div>
-  <div style={{ marginLeft: '20%', width: '60%' }}>
+  <div style={{ marginLeft: '10%', width: '80%' }}>
   <hr className='hire'></hr>
     <p className="title">Popular Cuisines</p>
     <FoodMenu />
-  </div>
+
+
+  <h2 className="title">Restaurants</h2>
+ <Main />
+ </div>
     </div>
   );
 };
